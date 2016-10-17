@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "hello": "./node_modules/.bin/ts-node ./hello-world.ts"
   },
   "repository": {
     "type": "git",
