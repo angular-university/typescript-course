@@ -1,7 +1,7 @@
 
 
 import ORM = require("Sequelize");
-import {Sequelize, DataTypes} from 'Sequelize';
+import {Sequelize} from 'Sequelize';
 
 
 

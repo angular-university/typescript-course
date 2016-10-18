@@ -1,21 +1,12 @@
 
 
-import Sequelize = require("Sequelize");
-import {initCourseModel} from "./src/model/init-course-model";
-import {LoggingOptions} from 'sequelize';
+
+import {CourseModel} from "./src/model";
 
 
 
 
-const loggingConfig: LoggingOptions = {benchmark:true, logging:console.log};
 
-const dbUrl = 'postgres://postgres:postgres@localhost:5432/complete-typescript-course';
-
-
-export const sequelize = new Sequelize(dbUrl, loggingConfig);
-
-
-const CourseModel = initCourseModel(sequelize);
 
 
 
