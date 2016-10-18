@@ -1,8 +1,8 @@
 
 import * as express from 'express';
-import {Request, Response} from 'express';
+
 import * as path from 'path';
-import {findAllCourses} from "./src/queries/findAllCourses";
+import {initApi} from "./src/api/api";
 var bodyParser = require('body-parser');
 
 
@@ -20,24 +20,10 @@ let root = path.join(path.resolve(__dirname, '.'));
 app.use(bodyParser.json());
 app.use(express.static(root));
 
+initApi(app);
 
 
 
-function apiGetAllCourses(req:Request, res:Response) {
-    findAllCourses()
-        .then((data:any) => {
-            res.status(200).json(data);
-
-        })
-        .catch(() => {
-            res.status(500).send();
-        });
-}
-
-
-
-
-app.route('/api/courses').get(apiGetAllCourses);
 
 
 
