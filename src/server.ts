@@ -2,7 +2,8 @@
 import * as express from 'express';
 
 import * as path from 'path';
-import {initApi} from "./src/api/api";
+import {initApi} from "./api/api";
+import {apiErrorHandler} from "./api/apiErrorHandler";
 var bodyParser = require('body-parser');
 
 
@@ -23,6 +24,7 @@ app.use(express.static(root));
 initApi(app);
 
 
+app.use(apiErrorHandler);
 
 
 

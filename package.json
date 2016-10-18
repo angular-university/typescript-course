@@ -6,7 +6,8 @@
   "scripts": {
     "hello": "./node_modules/.bin/ts-node ./hello-world.ts",
     "sql": "./node_modules/.bin/ts-node ./sql-examples.ts",
-    "server": "./node_modules/.bin/ts-node ./server.ts"
+    "server": "./node_modules/.bin/ts-node ./src/server.ts",
+    "watch": "./node_modules/.bin/nodemon -V -w src --ext \".ts\" --exec \"npm run server\""
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "@types/node": "^6.0.45",
     "@types/sequelize": "^4.0.38",
     "http-server": "^0.9.0",
+    "nodemon": "^1.11.0",
     "ts-node": "^1.6.0",
     "typescript": "^2.0.3"
   },
