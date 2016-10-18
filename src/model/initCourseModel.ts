@@ -1,6 +1,6 @@
 
 
-import ORM = require("Sequelize");
+import * as ORM from "Sequelize";
 import {Sequelize} from 'Sequelize';
 
 
