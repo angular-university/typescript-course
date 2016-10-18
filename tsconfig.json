@@ -7,7 +7,7 @@
         "strictNullChecks": true,
         "sourceMap": true
     },
-  "files": [
-    "hello-world.ts"
+  "exclude": [
+    "node_modules"
   ]
 }

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "hello": "./node_modules/.bin/ts-node ./hello-world.ts"
+    "hello": "./node_modules/.bin/ts-node ./hello-world.ts",
+    "sql": "./node_modules/.bin/ts-node ./sql-examples.ts"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,10 @@
     "http-server": "^0.9.0",
     "ts-node": "^1.6.0",
     "typescript": "^2.0.3"
+  },
+  "dependencies": {
+    "@types/sequelize": "^4.0.38",
+    "pg": "^6.1.0",
+    "sequelize": "^3.24.4"
   }
 }
