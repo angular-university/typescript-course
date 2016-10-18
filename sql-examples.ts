@@ -1,11 +1,13 @@
 
 
 import Sequelize = require("Sequelize");
+import {initCourseModel} from "./src/model/init-course-model";
+import {LoggingOptions} from 'sequelize';
 
 
 
 
-const loggingConfig = {benchmark:true, logging:console.log};
+const loggingConfig: LoggingOptions = {benchmark:true, logging:console.log};
 
 const dbUrl = 'postgres://postgres:postgres@localhost:5432/complete-typescript-course';
 
@@ -13,29 +15,7 @@ const dbUrl = 'postgres://postgres:postgres@localhost:5432/complete-typescript-c
 export const sequelize = new Sequelize(dbUrl, loggingConfig);
 
 
-
-const CourseModel = sequelize.define('Course', {
-    description: Sequelize.STRING,
-    url:  Sequelize.STRING,
-    longDescription: Sequelize.TEXT,
-    iconUrl: Sequelize.STRING,
-    courseListIcon:Sequelize.STRING,
-    seqNo: Sequelize.INTEGER,
-    comingSoon: Sequelize.BOOLEAN,
-    isNew: Sequelize.BOOLEAN,
-    isOngoing: Sequelize.BOOLEAN,
-    visibleFrom: Sequelize.DATE
-}, {
-    classMethods: {
-        associate: function (models:any) {
-            models.Course.hasMany(models.Lesson, {foreignKey: 'courseId'});
-        }
-    }
-});
-
-
-
-
+const CourseModel = initCourseModel(sequelize);
 
 
 
@@ -46,11 +26,7 @@ function findAllLessons() {
 }
 
 
-
-
 let lessons = findAllLessons();
-
-
 
 
 
