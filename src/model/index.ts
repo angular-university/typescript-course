@@ -1,8 +1,9 @@
 
 import Sequelize = require("Sequelize");
 import {LoggingOptions} from 'sequelize';
-import {initCourseModel} from "./init-course-model";
-import {initLessonModel} from "./init-lesson-model";
+import {initCourseModel} from "./initCourseModel";
+import {initLessonModel} from "./initLessonModel";
+
 
 
 const loggingConfig: LoggingOptions = {benchmark:true, logging:console.log};
