@@ -16,3 +16,5 @@ export const sequelize = new Sequelize(dbUrl, loggingConfig);
 export const CourseModel = initCourseModel(sequelize);
 
 export const LessonModel = initLessonModel(sequelize);
+
+

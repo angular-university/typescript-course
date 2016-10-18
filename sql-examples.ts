@@ -1,11 +1,9 @@
 
 
-
-import {findAllLessons} from "./src/queries/findAllLessons";
-
+import {findAllCourses} from "./src/queries/findAllCourses";
 
 
-let lessons = findAllLessons();
+let lessons = findAllCourses();
 
 
 

@@ -1,7 +1,7 @@
 
 import {CourseModel} from "../model";
 
-export function findAllLessons() {
+export function findAllCourses() {
     return CourseModel.findAll({
         order: ['seqNo']
     });
