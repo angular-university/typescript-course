@@ -7,7 +7,7 @@
     "hello": "./node_modules/.bin/ts-node ./hello-world.ts",
     "sql": "./node_modules/.bin/ts-node ./sql-examples.ts",
     "server": "./node_modules/.bin/ts-node ./src/server.ts",
-    "watch": "./node_modules/.bin/nodemon -V -w src --ext \".ts\" --exec \"npm run server\""
+    "watch": "./node_modules/.bin/nodemon -w src --ext \".ts\" --exec \"npm run server\""
   },
   "repository": {
     "type": "git",

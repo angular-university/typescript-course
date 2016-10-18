@@ -4,6 +4,8 @@ import * as express from 'express';
 import * as path from 'path';
 import {initApi} from "./api/api";
 import {apiErrorHandler} from "./api/apiErrorHandler";
+import {fallbackErrorHandler} from "./api/fallbackErrorHandler";
+
 var bodyParser = require('body-parser');
 
 
@@ -25,7 +27,7 @@ initApi(app);
 
 
 app.use(apiErrorHandler);
-
+app.use(fallbackErrorHandler);
 
 
 
