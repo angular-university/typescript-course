@@ -6,7 +6,7 @@
   "scripts": {
     "hello": "./node_modules/.bin/ts-node ./hello-world.ts",
     "sql": "./node_modules/.bin/ts-node ./sql-examples.ts",
-    "rest":"./node_modules/.bin/ts-node ./rest-examples.ts"
+    "rest": "./node_modules/.bin/ts-node ./rest-examples.ts"
   },
   "repository": {
     "type": "git",
@@ -27,8 +27,10 @@
     "typescript": "^2.0.3"
   },
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "pg": "^6.1.0",
+    "response-time": "^2.3.1",
     "sequelize": "^3.24.4"
   }
 }
