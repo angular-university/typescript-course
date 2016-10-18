@@ -1,6 +1,13 @@
 
-var message = 'Hello World';
 
 
-console.log(message);
+
+var user;
+
+
+user.name = 'Vasco';
+
+
+
+
 
