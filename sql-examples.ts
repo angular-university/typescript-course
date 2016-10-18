@@ -3,12 +3,10 @@
 import {findAllCourses} from "./src/queries/findAllCourses";
 
 
-let lessons = findAllCourses();
+let courses = findAllCourses();
 
 
-
-
-lessons
+courses
     .then((data:any) => {
 
         console.log(data[0].dataValues);
