@@ -21,7 +21,10 @@ let root = path.join(path.resolve(__dirname, '.'));
 
 
 app.use(bodyParser.json());
+
 app.use(express.static(root));
+
+
 
 initApi(app);
 
