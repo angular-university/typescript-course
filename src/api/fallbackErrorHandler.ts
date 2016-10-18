@@ -10,7 +10,7 @@ import {Request} from "express-serve-static-core";
 
 export function fallbackErrorHandler(err: any, req: Request, res: Response, next: NextFunction) {
 
-    res.status(500).send();
+    res.status(500).send("Error Occurred.");
 
 }
 
