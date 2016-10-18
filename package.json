@@ -6,7 +6,7 @@
   "scripts": {
     "hello": "./node_modules/.bin/ts-node ./hello-world.ts",
     "sql": "./node_modules/.bin/ts-node ./sql-examples.ts",
-    "rest": "./node_modules/.bin/ts-node ./rest-examples.ts"
+    "server": "./node_modules/.bin/ts-node ./server.ts"
   },
   "repository": {
     "type": "git",
