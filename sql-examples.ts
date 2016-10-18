@@ -1,23 +1,12 @@
 
 
 
-import {CourseModel} from "./src/model";
+import {findAllLessons} from "./src/queries/findAllLessons";
 
-
-
-
-
-
-
-
-function findAllLessons() {
-    return CourseModel.findAll({
-        order: ['seqNo']
-    });
-}
 
 
 let lessons = findAllLessons();
+
 
 
 
