@@ -1,6 +1,7 @@
 
 
-export type Lesson = {
+
+export interface Lesson  {
 
     readonly url:string;
     readonly description: string;
@@ -11,20 +12,5 @@ export type Lesson = {
     readonly tags: string;
 
 }
-
-
-
-export function mapLesson({url, description, duration, seqNo,courseId, pro, tags}:any): Lesson {
-    return {
-        url,
-        description,
-        duration,
-        seqNo,
-        courseId,
-        pro,
-        tags
-    }
-}
-
 
 

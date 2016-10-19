@@ -1,10 +1,9 @@
 import { Component,OnInit } from '@angular/core';
 import {CourseService} from "./shared/services/course.service";
 import {Observable} from "rxjs/Rx";
-
+import {Course} from "ctc-shared/model/course";
 
 import 'rxjs/add/operator/map';
-import {Course} from "../../shared/model/course";
 
 
 @Component({

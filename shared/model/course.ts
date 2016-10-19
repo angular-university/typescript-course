@@ -1,9 +1,7 @@
 
+import {Lesson} from "./lesson";
 
-import {mapLesson, Lesson} from "./lesson";
-
-
-export type Course = {
+export interface Course {
 
     readonly description: string,
     readonly url:  string,
@@ -15,20 +13,4 @@ export type Course = {
     readonly isNew: boolean,
     readonly isOngoing: boolean,
     readonly lessons: Lesson[];
-
-}
-
-export function mapCourseAndLessons({description, url, longDescription, iconUrl, courseListIcon, seqNo, comingSoon, isNew, isOngoing, Lessons}:any): Course {
-    return {
-        description,
-        url,
-        longDescription,
-        iconUrl,
-        courseListIcon,
-        seqNo,
-        comingSoon,
-        isNew,
-        isOngoing,
-        lessons: Lessons.map((lesson:any) => mapLesson(lesson) )
-    };
 }

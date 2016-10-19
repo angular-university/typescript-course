@@ -3,7 +3,8 @@
 import {CourseModel, LessonModel} from "../model";
 import Bluebird = require("bluebird");
 import * as _ from 'lodash';
-import {Course, mapCourseAndLessons} from "../../shared/model/course";
+import {mapCourseAndLessons} from "../../shared/model/course-utils";
+
 
 
 

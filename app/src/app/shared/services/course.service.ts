@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Http} from "@angular/http";
-
 import {Observable} from "rxjs/Rx";
-import {Course} from "../../../../shared/model/course";
-
+import {Course} from "ctc-shared/model/course";
 
 
 
@@ -17,7 +15,7 @@ export class CourseService {
 
 
     findCourseById(id:number): Observable<Course> {
-        return this.http.get(`/courses/${id}`).map(res => res.json());
+        return this.http.get(`/api/courses/${id}`).map(res => res.json());
     }
 
 

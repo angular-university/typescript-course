@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {Course} from "../../../shared/model/course";
-
+import {Course} from "ctc-shared/model/course";
 
 
 
