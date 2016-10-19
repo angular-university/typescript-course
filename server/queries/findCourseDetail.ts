@@ -2,7 +2,8 @@
 
 import {CourseModel, LessonModel} from "../model";
 import Bluebird = require("bluebird");
-
+import * as _ from 'lodash';
+import {mapLesson} from "../../shared/model/lesson";
 
 
 export function findCourseDetail(courseId:number): Bluebird<Course | null> {
@@ -17,7 +18,7 @@ export function findCourseDetail(courseId:number): Bluebird<Course | null> {
             [ LessonModel, 'seqNo' , 'ASC']
         ]
     })
-    .then(({description, url, longDescription, iconUrl, courseListIcon, seqNo, comingSoon, isNew, isOngoing}:any) => {
+    .then(({description, url, longDescription, iconUrl, courseListIcon, seqNo, comingSoon, isNew, isOngoing, Lessons}:any) => {
 
             const course : Course = {
                 description,
@@ -29,7 +30,7 @@ export function findCourseDetail(courseId:number): Bluebird<Course | null> {
                 comingSoon,
                 isNew,
                 isOngoing,
-                lessons: []
+                lessons: Lessons.map((lesson:any) => mapLesson(lesson) )
             };
 
             return Promise.resolve(course);
@@ -38,5 +39,7 @@ export function findCourseDetail(courseId:number): Bluebird<Course | null> {
     );
 
 }
+
+
 
 
