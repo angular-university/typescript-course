@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import {Http} from "@angular/http";
+
 import {Observable} from "rxjs/Rx";
-import {Course} from "../../../../../shared/model/course";
+import {Course} from "../../../../shared/model/course";
 
 
 
