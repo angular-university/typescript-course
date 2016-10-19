@@ -2,8 +2,9 @@
 
 
 
-export function updateLesson(lessonId:string, updatedProperties: any) {
+import {LessonModel} from "../model";
 
-    return Promise.resolve({});
 
+export function updateLesson(id:string, updatedProperties: any) {
+    return LessonModel.update(updatedProperties, {where: {id}});
 }
