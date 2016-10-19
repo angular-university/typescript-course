@@ -10,6 +10,7 @@ type Course = {
     seqNo: number,
     comingSoon: boolean,
     isNew: boolean,
-    isOngoing: boolean
+    isOngoing: boolean,
+    lessons: Lesson[];
 
 }
