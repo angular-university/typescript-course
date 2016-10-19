@@ -3,7 +3,7 @@ import {Request, Response} from 'express';
 import {onError} from "./onError";
 import {onSuccess} from "./onSuccess";
 import {deleteLesson} from "../queries/deleteLesson";
-
+import * as _ from 'lodash';
 
 export function apiDeleteLesson(req:Request, res:Response) {
 

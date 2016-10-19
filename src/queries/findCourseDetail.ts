@@ -1,9 +1,10 @@
 
 import {Promise} from 'es6-promise';
+import {CourseModel} from "../model";
 
 
-export function findCourseDetail(courseId:string) {
+export function findCourseDetail(courseId:number) {
 
-    return Promise.resolve({});
+    return CourseModel.findById(courseId);
 
 }
