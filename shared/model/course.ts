@@ -1,20 +1,20 @@
 
 
-import {mapLesson} from "./lesson";
-import {Lesson} from "../../../angular-academy.io/src/app/screens/lesson/lesson";
+import {mapLesson, Lesson} from "./lesson";
+
 
 export type Course = {
 
-    description: string,
-    url:  string,
-    longDescription: string,
-    iconUrl: string,
-    courseListIcon: string,
-    seqNo: number,
-    comingSoon: boolean,
-    isNew: boolean,
-    isOngoing: boolean,
-    lessons: Lesson[];
+    readonly description: string,
+    readonly url:  string,
+    readonly longDescription: string,
+    readonly iconUrl: string,
+    readonly courseListIcon: string,
+    readonly seqNo: number,
+    readonly comingSoon: boolean,
+    readonly isNew: boolean,
+    readonly isOngoing: boolean,
+    readonly lessons: Lesson[];
 
 }
 
