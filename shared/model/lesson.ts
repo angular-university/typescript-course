@@ -1,6 +1,6 @@
 
 
-type Lesson = {
+export type Lesson = {
 
     readonly url:string;
     readonly description: string;
