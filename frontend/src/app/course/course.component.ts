@@ -5,6 +5,7 @@ import {Course} from "../../../../shared/model/course";
 
 
 
+
 @Component({
   selector: 'course',
   templateUrl: './course.component.html',
