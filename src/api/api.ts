@@ -14,9 +14,9 @@ export function initApi(app: Application) {
     app.route('/api/courses/:id').get(apiGetCourseDetail);
 
 
-    app.route('/api/lesson').patch(apiPatchLesson);
-    app.route('/api/lesson').delete(apiDeleteLesson);
-    app.route('/api/lesson').post(apiCreateLesson);
+    app.route('/api/lesson/:id').patch(apiPatchLesson);
+    app.route('/api/lesson/:id').delete(apiDeleteLesson);
+    app.route('/api/lesson/:id').post(apiCreateLesson);
 
 
 }
