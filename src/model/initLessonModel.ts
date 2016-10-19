@@ -18,11 +18,5 @@ export function initLessonModel(sequelize:Sequelize) {
         vimeoid: ORM.STRING,
         gitHubUrl: ORM.STRING,
         downloadUrl: ORM.STRING
-    }, {
-        classMethods: {
-            associate: function (models:any) {
-                models.Lesson.belongsTo(models.Course, {foreignKey: 'courseId'});
-            }
-        }
     });
 }

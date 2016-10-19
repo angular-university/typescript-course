@@ -15,3 +15,5 @@ export function apiGetCourseDetail(req:Request, res:Response) {
         .catch( _.partial(onError, res, `Could not find course detail for id ${courseId}`) );
 
 }
+
+

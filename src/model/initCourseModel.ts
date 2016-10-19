@@ -18,11 +18,5 @@ export function initCourseModel(sequelize:Sequelize) {
         isNew: ORM.BOOLEAN,
         isOngoing: ORM.BOOLEAN,
         visibleFrom: ORM.DATE
-    }, {
-        classMethods: {
-            associate: function (models:any) {
-                models.Course.hasMany(models.Lesson, {foreignKey: 'courseId'});
-            }
-        }
     });
 }
