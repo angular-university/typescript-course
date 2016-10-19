@@ -19,14 +19,15 @@ export function findCourseDetail(courseId:number): Bluebird<Course | null> {
             [ LessonModel, 'seqNo' , 'ASC']
         ]
     })
-    .then(result => {
-            return Promise.resolve(mapCourseAndLessons(result));
-        }
-    );
+    .then(onCourseModelFound);
 
 }
 
 
+
+function onCourseModelFound(result:any) {
+    return Promise.resolve(mapCourseAndLessons(result));
+}
 
 
 
