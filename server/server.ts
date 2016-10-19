@@ -17,7 +17,7 @@ const port = 8090;
 const app = express();
 
 
-let root = path.join(path.resolve(__dirname, '.'));
+let root = path.join(path.resolve(__dirname, '..'));
 
 
 app.use(bodyParser.json());
