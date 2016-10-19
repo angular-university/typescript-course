@@ -16,7 +16,6 @@ export function initCourseModel(sequelize:Sequelize) {
         seqNo: ORM.INTEGER,
         comingSoon: ORM.BOOLEAN,
         isNew: ORM.BOOLEAN,
-        isOngoing: ORM.BOOLEAN,
-        visibleFrom: ORM.DATE
+        isOngoing: ORM.BOOLEAN
     });
 }

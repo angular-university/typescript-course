@@ -14,9 +14,6 @@ export function initLessonModel(sequelize:Sequelize) {
         courseId: ORM.INTEGER,
         pro: ORM.BOOLEAN,
         tags: ORM.STRING,
-        videoId: ORM.STRING,
-        vimeoid: ORM.STRING,
-        gitHubUrl: ORM.STRING,
-        downloadUrl: ORM.STRING
+        gitHubUrl: ORM.STRING
     });
 }

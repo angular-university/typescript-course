@@ -34,13 +34,10 @@ CREATE TABLE "Lessons"
   "seqNo" integer NOT NULL,
   "courseId" integer,
   pro boolean DEFAULT false,
-  "videoId" character varying(255),
   "gitHubUrl" character varying(255) NOT NULL,
-  "downloadUrl" character varying(255) NOT NULL,
   tags character varying(255) DEFAULT ''::character varying,
   "createdAt" timestamp with time zone NOT NULL,
   "updatedAt" timestamp with time zone NOT NULL,
-  vimeoid character varying(50),
   CONSTRAINT "Lessons_pkey" PRIMARY KEY (id),
   CONSTRAINT "Lessons_courseId_fkey" FOREIGN KEY ("courseId")
       REFERENCES "Courses" (id) MATCH SIMPLE
