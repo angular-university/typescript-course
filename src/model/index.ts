@@ -12,9 +12,9 @@ const dbUrl = 'postgres://postgres:postgres@localhost:5432/complete-typescript-c
 const sequelize = new Sequelize(dbUrl, loggingConfig);
 
 
-export const CourseModel:any = initCourseModel(sequelize);
+export const CourseModel = initCourseModel(sequelize);
 
-export const LessonModel:any = initLessonModel(sequelize);
+export const LessonModel = initLessonModel(sequelize);
 
 
 CourseModel.hasMany(LessonModel, {foreignKey: 'courseId'});

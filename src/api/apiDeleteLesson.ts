@@ -9,7 +9,7 @@ export function apiDeleteLesson(req:Request, res:Response) {
 
     const lessonId = req.params.id;
 
-    deleteLesson(lessonId, req.body)
+    deleteLesson(lessonId)
         .then(_.partial(onSuccess, res))
         .catch( _.partial(onError, res, `Could not delete lesson ${lessonId}`) );
 
