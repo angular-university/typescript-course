@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "hello": "./node_modules/.bin/ts-node ./hello-world.ts"
+
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,6 @@
   "homepage": "https://github.com/angular-university/complete-typescript-course#readme",
   "devDependencies": {
     "http-server": "^0.9.0",
-    "ts-node": "^1.6.0",
     "typescript": "^2.0.3"
   }
 }
