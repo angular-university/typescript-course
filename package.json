@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "es6": "./node_modules/.bin/http-server -c1 ."
+    "es6": "./node_modules/.bin/http-server -c-1 ."
 
   },
   "repository": {

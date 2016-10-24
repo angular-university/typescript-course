@@ -1,16 +1,21 @@
 
-var message = 'Hello World !';
 
 
-if (message) {
+function Person(name) {
 
-    var i:number;
+    this.name = name;
 
-    for (i=0;i< 3;i++) {
-        console.log(message + ' ' + i);
+    this.sayHi = function() {
+
+        setTimeout( () => {
+            console.log('Hello my name is ' + this.name);
+        },1000)
     }
 }
 
 
-console.log('Value of i = ' + i);
+const person = new Person('Bob');
+
+
+person.sayHi();
 
