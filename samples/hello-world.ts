@@ -1,21 +1,23 @@
 
 
-function buildPersonData({firstName, lastName, address}) {
+function buildPersonData({firstName, lastName}, address = ['']) {
     return `${firstName} ${lastName} ${address}`;
 }
 
+const partialAddress = ["Street Name", "Street Number", "Po Box"];
+
 
 const firstName = 'Kobe',
-     lastName = 'Bryant',
-     address = 'Staples Center';
+     lastName = 'Bryant';
 
 
 const personData = {
     firstName,
-    lastName,
-    address
+    lastName
 };
 
+const address = [...partialAddress, 'Staples Center'];
 
-buildPersonData(personData);
+
+buildPersonData(personData, address);
 
