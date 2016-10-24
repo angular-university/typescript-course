@@ -1,17 +1,18 @@
 
 
-function buildPersonData(personData) {
-    return personData.firstName + ' ' +
-        personData.lastName + ' ' +
-        personData.address;
+function buildPersonData({firstName, lastName, address}) {
+    return `${firstName} ${lastName} ${address}`;
 }
 
+const firstName = 'Kobe',
+     lastName = 'Bryant',
+     address = 'Staples Center';
 
 
 const personData = {
-  firstName: 'Kobe',
-  lastName: 'Bryant',
-  address: 'Staples Center'
+    firstName,
+    lastName,
+    address
 };
 
 
