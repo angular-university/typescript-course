@@ -15,9 +15,5 @@
   "bugs": {
     "url": "https://github.com/angular-university/complete-typescript-course/issues"
   },
-  "homepage": "https://github.com/angular-university/complete-typescript-course#readme",
-  "devDependencies": {
-    "http-server": "^0.9.0",
-    "typescript": "^2.0.3"
-  }
+  "homepage": "https://github.com/angular-university/complete-typescript-course#readme"
 }
