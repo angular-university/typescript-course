@@ -1,6 +1,6 @@
 
-let message:string | number = 'Hello World !';
+let message = 'Hello World !';
 
-message = 0;
+
 
 console.log(message);
