@@ -1,21 +1,19 @@
 
 
-
-function Person(name) {
-
-    this.name = name;
-
-    this.sayHi = function() {
-
-        setTimeout( () => {
-            console.log('Hello my name is ' + this.name);
-        },1000)
-    }
+function buildPersonData(personData) {
+    return personData.firstName + ' ' +
+        personData.lastName + ' ' +
+        personData.address;
 }
 
 
-const person = new Person('Bob');
+
+const personData = {
+  firstName: 'Kobe',
+  lastName: 'Bryant',
+  address: 'Staples Center'
+};
 
 
-person.sayHi();
+buildPersonData(personData);
 
