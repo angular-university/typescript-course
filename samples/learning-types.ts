@@ -1,3 +1,10 @@
 
+type HasName = {
+    firstName?:string,
+    lastName:string
+};
 
-console.log('Section 2');
+let person: HasName = {
+  lastName: 'Bryant'
+};
+
