@@ -3,8 +3,19 @@
 <head>
     <meta charset="utf-8">
     <title>The Complete Typescript Course</title>
-   
-    <script src="./samples/hello-world.js" ></script>
+
+    <script src="https://npmcdn.com/systemjs@0.19.27/dist/system.src.js"></script>
+
+    <script>
+
+        System.config({
+            defaultJSExtensions:true
+        });
+
+        System.import('/samples/hello-world');
+
+    </script>
+
 
 </head>
 <body>

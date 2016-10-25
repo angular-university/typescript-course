@@ -1,9 +1,10 @@
 
-function buildPersonData({firstName, lastName}, ...address) {
-    return `${firstName} ${lastName} ${address}`;
-}
 
-const partialAddress = ["Street Name", "Street Number", "Po Box"];
+import {buildPersonData} from "./buildPersonData";
+
+
+const partialAddress = ["Street Name",
+    "Street Number", "Po Box"];
 
 const firstName = 'Kobe',
      lastName = 'Bryant';
