@@ -1,18 +1,14 @@
 
-enum PlayerPosition {
-    Guard,
-    Forward,
-    Center
+
+function createMessage(name:string): string   {
+
+    if (name) {
+        return `Hello, my name is ${name}`;
+    }
+
+
+
 }
 
-interface Player {
-    name:string;
-    position: PlayerPosition
-}
 
-let kobe: Player | null = {
-    name: 'Kobe',
-    position: PlayerPosition.Guard
-};
-
-kobe = null;
+console.log(createMessage("Bob"));
