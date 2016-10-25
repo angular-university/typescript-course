@@ -1,14 +1,15 @@
 
-
-function createMessage(name:string): string   {
-
-    if (name) {
-        return `Hello, my name is ${name}`;
-    }
-
-
-
+interface HasName  {
+    firstName:string,
+    lastName: string
 }
 
+interface HasAddress  {
+    address:string
+}
 
-console.log(createMessage("Bob"));
+type Player = (HasName & HasAddress) | null;
+
+const player:Player = {firstName: "Magic", lastName:"Johnson", address:"Staples"};
+
+console.log(player);
