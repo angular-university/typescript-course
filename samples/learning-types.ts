@@ -1,16 +1,12 @@
 
+type ThreeNames = [string, string, string];
 
-interface MessageCreator {
-    (name:string) : string
-};
+let persons: ThreeNames = ['Kobe','Kareem', 'Shaq'];
+
+let counters: number[] = [0, 1,2];
+
+type PlayerTuple = [string, number];
+
+let tuple: PlayerTuple = ['Kobe', 5];
 
 
-function createHelloMessage(name:string) :string {
-    return `Hello, my name is ${name}`;
-}
-
-const creator: MessageCreator = createHelloMessage;
-
-const message = creator('Bill');
-
-console.log(message);
