@@ -8,3 +8,4 @@ let person: HasName = {
   lastName: 'Bryant'
 };
 
+
