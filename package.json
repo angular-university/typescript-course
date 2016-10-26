@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "es6": "./node_modules/.bin/http-server -c-1 .",
-    "types-examples": "node ./samples/learning-types.js"
+    "types-examples": "node ./samples/learning-types.js",
+    "hello": "node ./samples/hello-world.js"
   },
   "repository": {
     "type": "git",

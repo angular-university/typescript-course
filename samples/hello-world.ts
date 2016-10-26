@@ -1,7 +1,7 @@
 
 
 import {buildPersonData} from "./buildPersonData";
-
+import * as _ from 'lodash';
 
 const partialAddress = ["Street Name",
     "Street Number", "Po Box"];
