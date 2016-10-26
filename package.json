@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/angular-university/complete-typescript-course#readme",
   "devDependencies": {
+    "@types/express": "^4.0.33",
     "@types/lodash": "^4.14.37",
     "@types/node": "^6.0.45",
     "@types/sequelize": "^4.0.38",
@@ -27,6 +28,7 @@
     "ts-node": "^1.6.0"
   },
   "dependencies": {
+    "express": "^4.14.0",
     "lodash": "^4.16.4",
     "pg": "^6.1.0",
     "sequelize": "^3.24.6",
