@@ -13,7 +13,7 @@ app.route('/api/courses').get( (req,res) => {
     findAllCourses()
         .then(results => {
 
-            res.status(200).json(results);
+            res.status(200).json({results});
 
         });
 
@@ -23,7 +23,7 @@ app.route('/api/courses').get( (req,res) => {
 
 
 app.listen(8090, () => {
-    console.log('Server is running ...');
+    console.log('Server is now running on port 8090 ...');
 });
 
 

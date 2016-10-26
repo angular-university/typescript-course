@@ -7,7 +7,8 @@
     "es6": "./node_modules/.bin/http-server -c-1 .",
     "types-examples": "node ./samples/learning-types.js",
     "hello": "node ./samples/hello-world.js",
-    "start": "./node_modules/.bin/ts-node ./server/server.ts"
+    "start": "./node_modules/.bin/ts-node ./server/server.ts",
+    "watch": "./node_modules/.bin/nodemon  -w . --ext \".ts\" --exec \"npm run start\""
   },
   "repository": {
     "type": "git",
@@ -25,13 +26,13 @@
     "@types/node": "^6.0.45",
     "@types/sequelize": "^4.0.38",
     "http-server": "^0.9.0",
+    "nodemon": "^1.11.0",
     "ts-node": "^1.6.0"
   },
   "dependencies": {
     "express": "^4.14.0",
     "lodash": "^4.16.4",
     "pg": "^6.1.0",
-    "sequelize": "^3.24.6",
-    "sweetalert2": "^5.3.8"
+    "sequelize": "^3.24.6"
   }
 }
