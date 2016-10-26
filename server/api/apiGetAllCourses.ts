@@ -15,4 +15,5 @@ export function apiGetAllCourses(req:Request, res:Response) {
         });
 
 
+
 }
