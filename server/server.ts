@@ -1,5 +1,4 @@
 
-import {findAllCourses} from "./queries/findAllCourses";
 
 import * as express from 'express';
 import {Application} from "express";
