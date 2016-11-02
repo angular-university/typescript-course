@@ -16,7 +16,6 @@ abstract class SuperHero {
         this.name = name;
     }
 
-
 }
 
 class FlyingHero extends SuperHero {
@@ -41,6 +40,7 @@ class FlyingHero extends SuperHero {
             ${this.creationYear}
         `;
     }
+
 }
 
 const greenLantern = new FlyingHero('Silver Age Green Lantern', Editor.DC, 1959);
