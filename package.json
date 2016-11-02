@@ -8,7 +8,8 @@
     "types-examples": "node ./samples/learning-types.js",
     "hello": "node ./samples/hello-world.js",
     "start": "./node_modules/.bin/ts-node ./server/server.ts",
-    "watch": "./node_modules/.bin/nodemon  -w . --ext \".ts\" --exec \"npm run start\""
+    "watch": "./node_modules/.bin/nodemon  -w . --ext \".ts\" --exec \"npm run start\"",
+    "oo": "node ./samples/object-oriented.js"
   },
   "repository": {
     "type": "git",
