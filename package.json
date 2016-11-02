@@ -9,7 +9,8 @@
     "hello": "node ./samples/hello-world.js",
     "start": "./node_modules/.bin/ts-node ./server/server.ts",
     "watch": "./node_modules/.bin/nodemon  -w . --ext \".ts\" --exec \"npm run start\"",
-    "oo": "node ./samples/object-oriented.js"
+    "oo": "node ./samples/object-oriented.js",
+    "generics": "node ./samples/generics.js"
   },
   "repository": {
     "type": "git",
