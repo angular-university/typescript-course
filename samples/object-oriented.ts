@@ -4,43 +4,28 @@ enum Editor {
     DC
 }
 
-class SuperPower {
-    constructor(public name:string) {
-
-    }
-}
-
-
 class SuperHero {
-    name:string;
-    editor: Editor;
-    creationYear:number;
 
-    constructor(name:string, editor: Editor, creationYear: number) {
+    readonly name:string;
+
+    constructor(
+        name:string,
+        public editor:Editor,
+        public creationYear: number) {
         this.name = name;
-        this.editor = editor;
-        this.creationYear = creationYear;
     }
 }
 
 
+const superman = new SuperHero('Superman',Editor.DC, 1938);
 
-const batman = new SuperHero("Batman", Editor.DC, 1939);
+superman.name = 'Spiderman';
 
-const spiderman = new SuperHero("Spiderman", Editor.MARVEL, 1962);
+console.log(`
+    Super hero: 
+    ${superman.name} 
+    ${Editor[superman.editor]} 
+    ${superman.creationYear}
+`);
 
-
-
-class FlyingSuperHero extends SuperHero {
-
-    fly(message:string) {
-        console.log(message);
-    }
-
-}
-
-
-const superman = new FlyingSuperHero("SuperMan", Editor.DC, 1938);
-
-
-superman.fly('Up and Away !');
+console.log("Superman",superman);
