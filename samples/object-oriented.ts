@@ -4,8 +4,17 @@ enum Editor {
     DC
 }
 
+interface Hero {
+    name:string;
+    creationYear:number;
+}
 
-abstract class SuperHero {
+const batman:Hero = {
+    name: "Batman",
+    creationYear: 1939
+};
+
+abstract class SuperHero implements Hero {
 
     private static readonly LABEL = 'Hero:';
 
@@ -14,7 +23,7 @@ abstract class SuperHero {
     constructor(
         name:string,
         public _editor:Editor,
-        protected creationYear: number) {
+        public creationYear: number) {
         this.name = name;
     }
 
@@ -29,31 +38,25 @@ abstract class SuperHero {
 
 }
 
-class FlyingHero extends SuperHero {
+interface CanFly {
+    fly(message:string):void;
+}
+
+
+
+class FlyingHero extends SuperHero implements CanFly {
 
     fly(message:string) {
         console.log(message + this.creationYear);
     }
 
-    get editor():string {
-        return Editor[this._editor];
-    }
-
-    set editor(editorName:string) {
-        this._editor = (<any>Editor)[editorName];
-    }
-
 }
-
-const greenLantern = new FlyingHero('Silver Age Green Lantern', Editor.DC, 1959);
-
 
 
 const superman = new FlyingHero('Superman',Editor.MARVEL, 1938);
 
-superman.editor = "DC";
+console.log(superman.fly('Up and Away !'));
 
-console.log(SuperHero.createMessage(superman));
 
 
 
