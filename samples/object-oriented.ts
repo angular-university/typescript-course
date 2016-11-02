@@ -21,9 +21,6 @@ class SuperHero {
         this.editor = editor;
         this.creationYear = creationYear;
     }
-
-
-
 }
 
 
