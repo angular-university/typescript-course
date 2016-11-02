@@ -4,6 +4,7 @@ enum Editor {
     DC
 }
 
+
 class SuperHero {
 
     readonly name:string;
@@ -26,8 +27,20 @@ class SuperHero {
 
 }
 
+class FlyingHero extends SuperHero {
 
-const superman = new SuperHero('Superman',Editor.DC, 1938);
+    fly(message:string) {
+        console.log(message);
+    }
+}
 
-console.log(superman.createMessage());
+const greenLantern = new FlyingHero('Silver Age Green Lantern', Editor.DC, 1959);
+
+console.log(greenLantern.createMessage());
+
+const superman = new FlyingHero('Superman',Editor.DC, 1938);
+
+superman.fly('Up and Away !');
+
+//console.log(superman.createMessage());
 
