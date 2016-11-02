@@ -5,7 +5,7 @@ enum Editor {
 }
 
 
-class SuperHero {
+abstract class SuperHero {
 
     readonly name:string;
 
@@ -16,14 +16,7 @@ class SuperHero {
         this.name = name;
     }
 
-    createMessage() {
-        return `
-            Super hero: 
-            ${this.name} 
-            ${Editor[this.editor]} 
-            ${this.creationYear}
-        `;
-    }
+    abstract createMessage():string;
 
 }
 
@@ -49,7 +42,5 @@ console.log(greenLantern.createMessage());
 
 const superman = new FlyingHero('Superman',Editor.DC, 1938);
 
-//superman.fly('Up and Away ! ');
 
-//console.log(superman.createMessage());
 
