@@ -12,7 +12,7 @@ class SuperHero {
     constructor(
         name:string,
         public editor:Editor,
-        public creationYear: number) {
+        protected creationYear: number) {
         this.name = name;
     }
 
@@ -30,17 +30,17 @@ class SuperHero {
 class FlyingHero extends SuperHero {
 
     fly(message:string) {
-        console.log(message);
+        console.log(message + this.creationYear);
     }
 }
 
 const greenLantern = new FlyingHero('Silver Age Green Lantern', Editor.DC, 1959);
 
-console.log(greenLantern.createMessage());
+console.log(greenLantern.creationYear);
 
 const superman = new FlyingHero('Superman',Editor.DC, 1938);
 
-superman.fly('Up and Away !');
+superman.fly('Up and Away ! ');
 
 //console.log(superman.createMessage());
 
