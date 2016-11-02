@@ -11,12 +11,11 @@ abstract class SuperHero {
 
     constructor(
         name:string,
-        public editor:Editor,
+        public _editor:Editor,
         protected creationYear: number) {
         this.name = name;
     }
 
-    abstract createMessage():string;
 
 }
 
@@ -26,11 +25,19 @@ class FlyingHero extends SuperHero {
         console.log(message + this.creationYear);
     }
 
-    createMessage() {
+    get editor():string {
+        return Editor[this._editor];
+    }
+
+    set editor(editorName:string) {
+        this._editor = (<any>Editor)[editorName];
+    }
+
+    get message() {
         return `
             Flying Hero: 
             ${this.name} 
-            ${Editor[this.editor]} 
+            ${this.editor} 
             ${this.creationYear}
         `;
     }
@@ -38,9 +45,14 @@ class FlyingHero extends SuperHero {
 
 const greenLantern = new FlyingHero('Silver Age Green Lantern', Editor.DC, 1959);
 
-console.log(greenLantern.createMessage());
 
-const superman = new FlyingHero('Superman',Editor.DC, 1938);
+
+const superman = new FlyingHero('Superman',Editor.MARVEL, 1938);
+
+superman.editor = "DC";
+
+console.log(superman.message);
+
 
 
 
