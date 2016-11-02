@@ -14,18 +14,20 @@ class SuperHero {
         public creationYear: number) {
         this.name = name;
     }
+
+    createMessage() {
+        return `
+            Super hero: 
+            ${this.name} 
+            ${Editor[this.editor]} 
+            ${this.creationYear}
+        `;
+    }
+
 }
 
 
 const superman = new SuperHero('Superman',Editor.DC, 1938);
 
-superman.name = 'Spiderman';
+console.log(superman.createMessage());
 
-console.log(`
-    Super hero: 
-    ${superman.name} 
-    ${Editor[superman.editor]} 
-    ${superman.creationYear}
-`);
-
-console.log("Superman",superman);
