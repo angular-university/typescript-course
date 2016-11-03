@@ -1,16 +1,20 @@
 
+interface HasName {
+    name:string;
+}
 
-const heroes = ["Superman", "Batman", "Green Lantern", "Wonder Woman", "Flash"];
+const heroes: HasName[]  = [
+    {name:"Superman"},
+    {name:"Batman"},
+    {name:"Green Lantern"},
+    {name:"Wonder Woman"},
+    {name:"Flash"}
+];
 
-
-function cloneArray(array:any[]): any[] {
+function cloneArray<T>(array: T[]): T[] {
     return array.slice(0);
 }
 
-
-
 const clones = cloneArray(heroes);
 
-
-console.log("Printing clones", clones);
-
+console.log("Clones", clones);
