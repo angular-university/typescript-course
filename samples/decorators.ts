@@ -40,5 +40,64 @@ class Database {
 
 const db = new Database();
 
-db.saveData({message: 'Hello World !!'});
+//db.saveData({message: 'Hello World !!'});
+
+
+
+
+
+
+
+function registerOrmModel(model: Function) {
+    console.log("registering ORM models ",  model);
+}
+
+
+function Entity(tableName:string) {
+    return (target:Function) => {
+        registerOrmModel(target);
+    }
+}
+
+
+@Entity("TODOS")
+class Todo {
+    description:string;
+    done = false;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
