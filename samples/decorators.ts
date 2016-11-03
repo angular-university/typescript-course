@@ -1,28 +1,13 @@
 
-enum LoggingLevel {
-    INFO,
-    WARN,
-    DEBUG,
-    TRACE
-}
 
-const loggingLevel = LoggingLevel.DEBUG;
-
-function LogArguments(level: LoggingLevel) {
-    return (target: any, propertyKey: string, descriptor: PropertyDescriptor) => {
-        if (level >= loggingLevel) {
-            console.log(`>>> ${target.arguments}`);
-        }
-        return target;
-    }
-}
 
 
 class Database {
 
-    @LogArguments(LoggingLevel.DEBUG)
+     name = 'CTCDB';
+
     saveData(data:any) {
-        console.log('save data in the database ...');
+        console.log('saving data in the database ' + this.name);
     }
 
 }
