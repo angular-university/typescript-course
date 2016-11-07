@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { CourseDetailComponent } from './course-detail/course-detail.component';
 import {CoursesService} from "./services/courses.service";
 
+import 'rxjs/add/operator/map';
+
 @NgModule({
   declarations: [
     AppComponent,
