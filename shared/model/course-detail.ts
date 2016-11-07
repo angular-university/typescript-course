@@ -1,14 +1,10 @@
 
 
 import {Lesson} from "./lesson";
+import {CourseSummary} from "./course-summary";
 
-export interface Course {
-    description: string,
-    readonly url: string,
+export interface CourseDetail extends CourseSummary {
     longDescription: string,
-    iconUrl: string,
-    courseListIcon: string,
-    seqNo: number,
     comingSoon?: boolean,
     isNew?: boolean,
     isOngoing?: boolean,
