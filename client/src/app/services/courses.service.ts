@@ -13,8 +13,6 @@ export class CoursesService {
 
   }
 
-
-
     loadCourseDetail(courseId: number) :Observable<CourseDetail> {
 
         return this.http.get(`/api/courses/${courseId}`)

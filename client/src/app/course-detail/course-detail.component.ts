@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input} from '@angular/core';
+import {CourseDetail} from "../../../../shared/model/course-detail";
 
 @Component({
   selector: 'course-detail',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course-detail.component.css']
 })
 export class CourseDetailComponent implements OnInit {
+
+  @Input()
+  courseDetail:CourseDetail;
 
   constructor() {
 
