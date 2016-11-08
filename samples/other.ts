@@ -1,3 +1,3 @@
 
 
-console.log('Other features');
+Logging.logMessage();
