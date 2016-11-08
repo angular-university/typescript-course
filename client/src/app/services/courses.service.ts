@@ -8,14 +8,17 @@ import {CourseDetail} from "../../../../shared/model/course-detail";
 @Injectable()
 export class CoursesService {
 
-  constructor(private http:Http) { }
+  constructor(private http:Http) {
+
+
+  }
+
 
 
     loadCourseDetail(courseId: number) :Observable<CourseDetail> {
 
         return this.http.get(`/api/courses/${courseId}`)
-            .map(res => res.json());
-
+            .map(res => res.json().payload);
     }
 
 
