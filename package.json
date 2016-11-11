@@ -39,6 +39,7 @@
     "human-readable-ids": "^1.0.1",
     "lodash": "^4.16.4",
     "pg": "^6.1.0",
-    "sequelize": "^3.24.6"
+    "sequelize": "^3.24.6",
+    "typescript": "^2.0.9"
   }
 }
