@@ -40,6 +40,6 @@
     "lodash": "^4.16.4",
     "pg": "^6.1.0",
     "sequelize": "^3.24.6",
-    "typescript": "^2.0.9"
+    "typescript": "2.0.10"
   }
 }
