@@ -3,6 +3,8 @@
 
 This repository contains the full application of the Complete Typescript Course.
 
+![Complete Typescript Course](https://angular-academy.s3.amazonaws.com/thumbnails/typescript-2-small.png)
+
 # Installation pre-requisites
 
 For running this project we need and npm installed on our machine. These are some tutorials to install node in different operating systems:
