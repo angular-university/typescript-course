@@ -11,7 +11,7 @@ Contains the code for several of the Angular University courses.
 
 [Angular for Beginners Course](https://angular-university.io/course/getting-started-with-angular2)
 
-![Angular for Beginners course](https://angular-academy.s3.amazonaws.com/thumbnails/angular2-for-beginners-small.png)
+![Angular for Beginners course](https://angular-academy.s3.amazonaws.com/thumbnails/angular2-for-beginners-small-v2.png)
 
 
 # Angular 2 and Firebase - Build a Web Application Course
