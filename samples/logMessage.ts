@@ -1,9 +1,6 @@
-
 namespace Logging {
-
-    export function logMessage() {
-        console.log('Other features');
-    }
-
+  export function logMessage() {
+    console.log('Other features');
+  }
 }
 

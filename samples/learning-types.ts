@@ -1,6 +1,3 @@
-
-
-
 import * as _ from 'lodash';
 
 const colors = ["Red", "Green", "Blue"];

@@ -1,17 +1,17 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "target": "es5",
-        "noImplicitAny": true,
-        "sourceMap": true,
-        "strictNullChecks": true,
-        "noEmitOnError": true,
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "lib": ["es6"],
-        "skipLibCheck": true
-    },
-    "exclude": [
-      "client/node_modules"
-    ]
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "noEmitOnError": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "lib": ["es6"],
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "client/node_modules"
+  ]
 }

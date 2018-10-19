@@ -1,12 +1,7 @@
-
-
 declare interface FirstFunction {
-    (data:any[]) :any;
+  (data:any[]) :any;
 }
-
-
 declare interface Lodash {
-
-    first:FirstFunction;
+  first:FirstFunction;
 }
 
