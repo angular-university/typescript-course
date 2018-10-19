@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "es6": "./node_modules/.bin/http-server -c-1 .",
-    "types-examples": "node ./samples/learning-types.js",
-    "hello": "node ./samples/hello-world.js",
+    "types-examples": "node ./src/samples/learning-types.js",
+    "hello": "node ./src/samples/hello-world.js",
     "start": "./node_modules/.bin/ts-node ./server/server.ts",
     "watch": "./node_modules/.bin/nodemon  -w . --ext \".ts\" --exec \"npm run start\"",
-    "oo": "node ./samples/object-oriented.js",
-    "generics": "node ./samples/generics.js",
-    "decorators": "node ./samples/decorators.js",
+    "oo": "node ./src/samples/object-oriented.js",
+    "generics": "node ./src/samples/generics.js",
+    "decorators": "node ./src/samples/decorators.js",
     "lint:editorconfig": "editorconfig-checker"
   },
   "repository": {
