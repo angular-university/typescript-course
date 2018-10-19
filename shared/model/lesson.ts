@@ -8,7 +8,3 @@ export interface Lesson {
   pro: boolean;
   tags?: string;
 }
-
-
-
-

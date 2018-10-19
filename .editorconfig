@@ -1,0 +1,11 @@
+# Unix-style newlines
+[*]
+end_of_line = lf
+insert_final_newline = false
+
+# Matches multiple files with brace expansion notation
+# Set default charset
+[*.{js,ts,html,css,package.json}]
+charset = utf-8
+indent_style = space
+indent_size = 2
